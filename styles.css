@@ -1,0 +1,131 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-size: 24px;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-areas: "input input input del"
+                         "clear parenthesis percent division"
+                         "seven eight nine multiplication"
+                         "four five six subtraction"
+                         "one two three addition"
+                         "negation zero dot equals";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 600px;
+    height: 600px;
+    
+}
+
+.input-container {
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 20px;
+    font-size: 52px;
+    max-width: 100%;
+}
+
+.delete {
+    grid-area: del;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.parenthesis {
+    grid-area: parenthesis;
+}
+
+.percent {
+    grid-area: percent;
+}
+
+.division {
+    grid-area: division;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.subtraction {
+    grid-area: subtraction;
+}
+
+.addition {
+    grid-area: addition;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.six {
+    grid-area: six;
+}
+
+.five {
+    grid-area: five;
+}
+
+.four {
+    grid-area: four;
+}
+
+.three {
+    grid-area: three;
+}
+
+.two {
+    grid-area: two;
+}
+
+.one {
+    grid-area: one;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.pos-neg {
+    grid-area: negation;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.equals {
+    grid-area: equals;
+}
+
+.calc-container > div   {
+    border: 1px solid black;
+    text-align: center;
+}
